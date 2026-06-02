@@ -1,0 +1,10 @@
+
+body{margin:0;font-family:-apple-system,sans-serif;background:#0f172a;color:#fff}
+.header{display:flex;justify-content:space-between;padding:20px 8%;background:#111827;position:sticky;top:0}
+nav a{color:#fff;text-decoration:none;margin:0 8px}
+.hero{display:flex;align-items:center;gap:40px;padding:60px 8%}
+.hero img{width:320px;border-radius:24px}
+.btn{background:#0A84FF;color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none}
+section{padding:50px 8%}
+.chips span,.project,.stats div{display:inline-block;background:rgba(255,255,255,.08);padding:12px 16px;margin:8px;border-radius:14px}
+.stats{display:flex;gap:10px;flex-wrap:wrap}
