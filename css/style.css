@@ -93,7 +93,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .stat-card {
@@ -130,22 +130,20 @@ section {
 }
 
 .education-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #0A84FF;
+    text-align: left;
+    color: #FFFFFF;
     margin-bottom: 10px;
 }
 
 .subtitle {
-    text-align: center;
-    color: #bdbdbd;
-    margin-bottom: 60px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 16px;
 }
 
 .journey {
     position: relative;
-    max-width: 900px;
-    margin: auto;
+    margin: left;
 }
 
 .journey::before {
@@ -281,6 +279,99 @@ section {
 
 .project-table li {
     margin-bottom: 10px;
+}
+
+.projects-section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.projects-section h1 {
+    text-align: center;
+    color: #0A84FF;
+    margin-bottom: 30px;
+}
+
+.project-card {
+    background: linear-gradient(135deg, #0A84FF, #30D5C8);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-header {
+    width: 100%;
+    margin-top: 0px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #0A84FF, #30D5C8);
+    color: white;
+    cursor: pointer;
+    font-weight: 900;
+    transition: 0.3s ease;
+    text-align: left;
+}
+
+.project-header:hover {
+    background: #0066d6;
+}
+
+.project-content {
+    display: none;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    width: 220px;
+    background: linear-gradient(135deg, #0A84FF, #30D5C8);
+    color: white;
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    line-height: 1.8;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width:768px) {
+
+    table,
+    tbody,
+    tr,
+    td,
+    th {
+        display: block;
+        width: 100%;
+    }
+
+    table th {
+        border-bottom: none;
+    }
+
+    table td {
+        border-top: none;
+        margin-bottom: 10px;
+    }
 }
 
 @media(max-width:768px) {
