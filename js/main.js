@@ -1,14 +1,6 @@
-function toggleAbout() {
-    const content = document.getElementById("aboutMore");
-    const button = document.querySelector(".see-more-btn");
-
-    content.classList.toggle("active");
-
-    if (content.classList.contains("active")) {
-        button.innerHTML =
-            '<i class="fas fa-chevron-up"></i> Show Less';
-    } else {
-        button.innerHTML =
-            '<i class="fas fa-chevron-down"></i> See More';
-    }
+function toggleAbout(){
+ const c=document.getElementById('aboutMore');
+ const b=document.querySelector('.see-more-btn');
+ c.classList.toggle('active');
+ b.textContent=c.classList.contains('active')?'Show Less':'See More';
 }
