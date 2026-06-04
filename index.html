@@ -1,675 +1,602 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+    margin: 0;
+    font-family: -apple-system, sans-serif;
+    background: #0f172a;
+    color: #fff
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amarendra Baitha | Senior iOS Engineer</title>
-    <meta name="description"
-        content="Senior iOS Engineer with 8+ years experience in Swift, SwiftUI and Enterprise iOS Apps">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background: #111827;
+    position: sticky;
+    top: 0
+}
 
-<body>
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px
+}
 
-    <header class="header">
-        <div class="logo">AB.</div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects-section">Projects</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0A84FF, #30D5C8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(10, 132, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
-    <section class="hero">
-        <img src="assets/images/profile.png" alt="Profile">
-        <div>
-            <h1>Amarendra Baitha</h1>
-            <h2>Senior iOS Engineer</h2>
-            <p>8+ years building enterprise, B2B and B2C iOS applications using Swift, SwiftUI, Firebase, MVVM and REST
-                APIs.
+.logo span {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
 
-            </p>
-            <a class="btn" href="assets/documents/Amarendra_Baitha_Resume.pdf"><i class="fas fa-download"></i>
-                Resume</a>
-        </div>
-    </section>
+.logo:hover {
+    transform: scale(1.08);
+}
 
-    <section id="about">
-        <h2><i class="fas fa-user"></i> About Me</h2>
-        <div class="about-content">
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 8%
+}
 
-            <p>
-                Experienced <strong>Senior iOS Engineer</strong> with over
-                <strong>8+ years of professional experience</strong> in designing,
-                developing, testing, and deploying high-performance iOS applications
-                across Healthcare, Social Networking, Enterprise Automation,
-                Travel, Food & Beverage, and Productivity domains.
+.hero img {
+    width: 320px;
+    border-radius: 24px
+}
 
-            </p>
+.btn {
+    background: #0A84FF;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-decoration: none
+}
 
-            <p>
-                Specialized in <strong>Swift, SwiftUI, Objective-C, Firebase,
-                    Core Data, SwiftData, XCTest, MVVM Architecture, REST APIs,
-                    AVFoundation, MapKit, CallKit, Socket.IO</strong>, and modern
-                Apple ecosystem technologies. Proven track record of delivering
-                scalable, maintainable, and user-centric mobile solutions from
-                concept to App Store release.
+section {
+    padding: 16px 8%
+}
 
-            </p>
-            <div id="aboutMore" class="about-more">
+.chips span,
+.project,
+.stats div {
+    display: inline-block;
+    background: rgba(255, 255, 255, .08);
+    padding: 12px 16px;
+    margin: 8px;
+    border-radius: 14px
+}
 
-                <div id="aboutMore" class="about-more">
-                    <p>
-                        Throughout my career, I have worked with cross-functional teams,
-                        product managers, designers, QA engineers, and stakeholders to
-                        deliver enterprise-grade mobile applications that serve thousands
-                        of users worldwide.
-                    </p>
+.stats {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap
+}
 
-                    <p>
-                        My expertise includes implementing advanced features such as
-                        real-time messaging, audio/video calling, push notifications,
-                        PDF scanning, OCR, offline data synchronization, analytics,
-                        payment integrations, location services, and automation testing.
-                    </p>
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 10px;
+}
 
-                    <p>
-                        I have successfully developed and maintained applications such as
-                        <strong>AST2 Diagnostics</strong>,
-                        <strong>Moocher</strong>,
-                        <strong>My PDF Scanner</strong>,
-                        <strong>Capital Society</strong>,
-                        and <strong>Altitude Inflight Magazine</strong>,
-                        contributing to architecture decisions, performance optimization,
-                        feature development, and App Store deployments.
-                    </p>
+.stat-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+}
 
-                    <p>
-                        Passionate about clean architecture, code quality, continuous
-                        learning, and building exceptional user experiences using the
-                        latest Apple technologies and industry best practices.
-                    </p>
+.stat-card i {
+    font-size: 28px;
+    color: #0A84FF;
+    margin-bottom: 12px;
+}
 
-                </div>
+.stat-card h3 {
+    font-size: 32px;
+    margin: 10px 0;
+}
 
-                <div class="stats">
+.contact-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
-                    <div class="stat-card">
-                        <i class="fas fa-calendar-check"></i>
-                        <h3>8+</h3>
-                        <p>Years Experience</p>
-                    </div>
+.contact-link:hover {
+    color: #0A84FF;
+}
 
-                    <div class="stat-card">
-                        <i class="fas fa-mobile-screen"></i>
-                        <h3>15+</h3>
-                        <p>Apps Delivered</p>
-                    </div>
+.education-section {
+    padding-left: 80px 10%;
+}
 
-                    <div class="stat-card">
-                        <i class="fas fa-layer-group"></i>
-                        <h3>50+</h3>
-                        <p>Features Built</p>
-                    </div>
+.education-section h2 {
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
 
-                    <div class="stat-card">
-                        <i class="fas fa-users"></i>
-                        <h3>10+</h3>
-                        <p>Enterprise Clients</p>
-                    </div>
+.subtitle {
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
 
-                    <div class="stat-card">
-                        <i class="fas fa-cloud"></i>
-                        <h3>100+</h3>
-                        <p>API Integrations</p>
-                    </div>
+.journey {
+    position: relative;
+    margin: left;
+}
 
-                    <div class="stat-card">
-                        <i class="fas fa-star"></i>
-                        <h3>100%</h3>
-                        <p>Client Satisfaction</p>
-                    </div>
+.journey::before {
+    content: "";
+    position: absolute;
+    left: 35px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            #0A84FF,
+            #30D5C8);
+}
 
-                </div>
+.journey-item {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 40px;
+    position: relative;
+}
 
-            </div>
-    </section>
-    <section id="skills">
-        <h2><i class="fas fa-code"></i> Skills</h2>
-        <div class="chips">
-            <span><i class="fab fa-swift"></i> Swift</span>
-            <span><i class="fab fa-apple"></i> SwiftUI</span>
-            <span><i class="fas fa-fire"></i> Firebase</span>
-            <span><i class="fas fa-layer-group"></i> MVVM</span>
-            <span><i class="fas fa-vial"></i> XCTest</span>
-            <span><i class="fas fa-cloud"></i> REST APIs</span>
-            <span><i class="fas fa-database"></i> Core Data</span>
-            <span><i class="fas fa-map-location-dot"></i> MapKit</span>
-            <span><i class="fas fa-video"></i> AVFoundation</span>
-            <span><i class="fas fa-comments"></i> Socket.IO</span>
-            <span><i class="fas fa-phone"></i> CallKit</span>
-            <span><i class="fas fa-code-branch"></i> Git</span>
-        </div>
-    </section>
-    <section class="experience-section">
-        <h2 style="display: inline-block; margin: 8;"><i class="fas fa-briefcase"></i> Experience</h2>
-        <!-- Company 1 -->
-        <div class="experience-card">
-            <button class="toggle-btn" onclick="toggleTable('exp1')">
-                ▶ Software Engineering, Gurugram
-            </button>
+.journey-icon {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0A84FF, #30D5C8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    z-index: 2;
+}
 
-            <div id="exp1" class="experience-content">
-                <table>
-                    <tr>
-                        <td class="label">Organization</td>
-                        <td>Software Engineering, Gurugram</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Time Period</td>
-                        <td>23 Jan 2023 – Currently Working</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+.journey-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all .3s ease;
+}
 
-        <!-- Company 2 -->
-        <div class="experience-card">
-            <button class="toggle-btn" onclick="toggleTable('exp2')">
-                ▶ Live Deftsoft Informatics Pvt Ltd
-            </button>
+.journey-card:hover {
+    transform: translateY(-5px);
+    border-color: #30D5C8;
+    box-shadow: 0 10px 30px rgba(48, 213, 200, .15);
+}
 
-            <div id="exp2" class="experience-content">
-                <table>
-                    <tr>
-                        <td class="label">Organization</td>
-                        <td>Live Deftsoft Informatics Pvt Ltd</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Time Period</td>
-                        <td>18 Nov 2020 – 23 Dec 2022</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+.year {
+    display: inline-block;
+    background: #0A84FF;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
 
-        <!-- Company 3 -->
-        <div class="experience-card">
-            <button class="toggle-btn" onclick="toggleTable('exp3')">
-                ▶ EWeb A1 Professionals Pvt Ltd
-            </button>
+.journey-card h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
 
-            <div id="exp3" class="experience-content">
-                <table>
-                    <tr>
-                        <td class="label">Organization</td>
-                        <td>EWeb A1 Professionals Pvt Ltd</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Time Period</td>
-                        <td>07 Feb 2018 – 18 Nov 2020</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+.details p,
+.journey-card p {
+    color: #d6d6d6;
+    line-height: 1.8;
+    margin: 5px 0;
+}
 
-        <!-- Company 4 -->
-        <div class="experience-card">
-            <button class="toggle-btn" onclick="toggleTable('exp4')">
-                ▶ Mechlin Software Technology Pvt Ltd
-            </button>
+.success {
+    background: linear-gradient(135deg, #30D5C8, #0A84FF);
+}
 
-            <div id="exp4" class="experience-content">
-                <table>
-                    <tr>
-                        <td class="label">Organization</td>
-                        <td>Mechlin Software Technology Pvt Ltd</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Time Period</td>
-                        <td>01 May 2017 – 05 Feb 2018</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </section>
+.final-step .journey-card {
+    border: 1px solid #30D5C8;
+}
 
-    <script>
-        function toggleTable(id) {
-            const content = document.getElementById(id);
+.bullet {
+    color: #d6d6d6;
+    background: linear-gradient(135deg, #30D5C8, #0A84FF);
+    font-weight: bold;
+    margin: 0 8px;
+}
 
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        }
-    </script>
+.contact-link .fa-arrow-right,
+.contact-link .fa-angle-right {
+    color: #0A84FF;
+    margin-right: 8px;
+}
 
-    <section class="projects-section">
-        <h2><i class="fas fa-laptop-code"></i> Featured Projects</h2>
-        <!-- Project 1 -->
-        <div class="project-card">
-            <button class="project-header" onclick="toggleProject('p1')">
-                ▶ <i class="fas fa-stethoscope"> </i> AST2 Diagnostics
+.arrow {
+    color: #0A84FF;
+    font-weight: bold;
+    margin-right: 8px;
+}
 
-            </button>
-            <div class="project-content" id="p1">
-                <table>
-                    <tr>
-                        <th>Client</th>
-                        <td>Software Engineering, Gurugram</td>
-                    </tr>
-                    <tr>
-                        <th>Role</th>
-                        <td>Senior iOS Engineer</td>
-                    </tr>
-                    <tr>
-                        <th>Period</th>
-                        <td>Mar 2023 - Feb 2025</td>
-                    </tr>
-                    <tr>
-                        <th>Environment</th>
-                        <td>Swift, SwiftUI, XCUTest, MVVM, REST APIs, XCAutomation</td>
-                    </tr>
-                    <tr>
-                        <th>Domain</th>
-                        <td>Diagnostics (Internal Use)</td>
-                    </tr>
-                    <tr>
-                        <th>Description</th>
-                        <td>
-                            Created a MacOS application for device diagnostics and implemented
-                            UI Automation and functional testing for multiple iPhone and iPad applications.
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Responsibilities</th>
-                        <td>
-                            • UI Design & Development<br>
-                            • Core Data Implementation<br>
-                            • REST APIs Integration<br>
-                            • XCUI Automation<br>
-                            • Testing & Report Submission
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+.project-details {
+    margin: 40px 0;
+}
 
-        <!-- Project 2 -->
-        <div class="project-card">
-            <button class="project-header" onclick="toggleProject('p2')">
-                ▶ <i class="fas fa-heart"> </i> Moocher - Find Dates Or Friends
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Times New Roman", serif;
+}
 
-            </button>
+.project-table th,
+.project-table td {
+    border: 2px solid #000;
+    padding: 18px;
+    vertical-align: top;
+}
 
-            <div class="project-content" id="p2">
-                <table>
-                    <tr>
-                        <th>Client</th>
-                        <td>Deftsoft Informatics Solution</td>
-                    </tr>
-                    <tr>
-                        <th>Role</th>
-                        <td>Senior iOS Engineer</td>
-                    </tr>
-                    <tr>
-                        <th>Period</th>
-                        <td>Jan 2022 - Nov 2022</td>
-                    </tr>
-                    <tr>
-                        <th>Environment</th>
-                        <td>Swift, Socket.IO, MVVM, REST APIs, CallKit, APNs, Agora APIs, Google Maps, Geo Location</td>
-                    </tr>
-                    <tr>
-                        <th>Domain</th>
-                        <td>Social Networking</td>
-                    </tr>
-                    <tr>
-                        <th>Description</th>
-                        <td>
-                            Swipe, connect, find love or friends based on location and preferences.
-                            Includes Video Call, Audio Call, Real-Time Chat and Matchmaking features.
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Responsibilities</th>
-                        <td>
-                            • UI Design & Development<br>
-                            • Socket.IO Chat Integration<br>
-                            • Agora Video & Audio Calling<br>
-                            • MVVM Architecture<br>
-                            • Unit Testing<br>
-                            • App Store Submission
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>App Store</th>
-                        <td>
-                            <a href="https://apps.apple.com/us/app/id1482252105" target="_blank">
-                                View App
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+.project-table th {
+    width: 30%;
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+}
 
-        <!-- Project 3 -->
-        <div class="project-card">
-            <button class="project-header" onclick="toggleProject('p3')">
-                ▶ <i class="fas fa-file-pdf"> </i> My PDF Scanner
+.project-table td {
+    font-size: 24px;
+}
 
-            </button>
-            <div class="project-content" id="p3">
-                <table>
-                    <tr>
-                        <th>Client</th>
-                        <td>Deftsoft Informatics Solution</td>
-                    </tr>
-                    <tr>
-                        <th>Role</th>
-                        <td>Senior iOS Engineer</td>
-                    </tr>
-                    <tr>
-                        <th>Period</th>
-                        <td>Apr 2021 - Dec 2021</td>
-                    </tr>
-                    <tr>
-                        <th>Environment</th>
-                        <td>Swift, Firebase, Realm DB, Google Analytics, APNs, MVVM</td>
-                    </tr>
-                    <tr>
-                        <th>Domain</th>
-                        <td>Business</td>
-                    </tr>
-                    <tr>
-                        <th>Description</th>
-                        <td>
-                            Scan documents, passports, ID cards, business cards and convert
-                            them into PDF. Includes OCR, text translation and math solver features.
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Responsibilities</th>
-                        <td>
-                            • UI Design & Development<br>
-                            • Firebase Integration<br>
-                            • OCR & Translation APIs<br>
-                            • Math Solver APIs<br>
-                            • MVVM Architecture<br>
-                            • App Store Submission
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>App Store</th>
-                        <td>
-                            <a href="https://apps.apple.com/in/app/my-pdf-scanner-scan-documents/id1560099788"
-                                target="_blank">
-                                View App
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+.project-table ul {
+    margin: 0;
+    padding-left: 30px;
+}
 
-        <!-- Project 4 -->
-        <div class="project-card">
-            <button class="project-header" onclick="toggleProject('p4')">
-                ▶ <i class="fas fa-utensils"> </i> Capital Society - Venue App
-            </button>
-            <div class="project-content" id="p4">
-                <table>
-                    <tr>
-                        <th>Client</th>
-                        <td>Deftsoft Informatics Solution</td>
-                    </tr>
-                    <tr>
-                        <th>Role</th>
-                        <td>iOS Engineer</td>
-                    </tr>
-                    <tr>
-                        <th>Period</th>
-                        <td>Mar 2020 - Mar 2021</td>
-                    </tr>
-                    <tr>
-                        <th>Environment</th>
-                        <td>Swift, MVVM, REST APIs, Core Data, APNs</td>
-                    </tr>
-                    <tr>
-                        <th>Domain</th>
-                        <td>Food & Drink</td>
-                    </tr>
-                    <tr>
-                        <th>Description</th>
-                        <td>
-                            Loyalty application rewarding customers with wallet points,
-                            birthday offers and event promotions.
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Responsibilities</th>
-                        <td>
-                            • UI Design & Development<br>
-                            • REST APIs<br>
-                            • Core Data<br>
-                            • APNs Integration<br>
-                            • MVVM Architecture<br>
-                            • App Store Submission
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+.project-table li {
+    margin-bottom: 10px;
+}
 
-        <!-- Project 5 -->
-        <div class="project-card">
-            <button class="project-header" onclick="toggleProject('p5')">
-                ▶ <i class="fas fa-plane"> </i> Altitude Inflight Magazine
-            </button>
+.projects-section {
+    max-width: 1200px;
+    margin: auto;
+}
 
-            <div class="project-content" id="p5">
-                <table>
-                    <tr>
-                        <th>Client</th>
-                        <td>Eweb A1 Professional</td>
-                    </tr>
-                    <tr>
-                        <th>Role</th>
-                        <td>iOS Engineer</td>
-                    </tr>
-                    <tr>
-                        <th>Period</th>
-                        <td>Jan 2019 - Oct 2020</td>
-                    </tr>
-                    <tr>
-                        <th>Environment</th>
-                        <td>Swift, MVVM, Core Data, File Manager, APNs</td>
-                    </tr>
-                    <tr>
-                        <th>Domain</th>
-                        <td>Travel</td>
-                    </tr>
-                    <tr>
-                        <th>Description</th>
-                        <td>
-                            Digital inflight magazine platform providing offline reading,
-                            download and bookmark functionality.
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Responsibilities</th>
-                        <td>
-                            • UI Design & Development<br>
-                            • REST APIs<br>
-                            • Core Data<br>
-                            • File Manager<br>
-                            • APNs Integration<br>
-                            • App Store Submission
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>App Store</th>
-                        <td>
-                            <a href="https://apps.apple.com/us/app/altitude-inflight-magazines/id1453353332"
-                                target="_blank">
-                                View App
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+.projects-section h1 {
+    text-align: center;
 
-    </section>
+    margin-bottom: 30px;
+}
 
-    <script>
-        function toggleProject(id) {
-            const content = document.getElementById(id);
+.project-card {
+    background: linear-gradient(135deg, #0A84FF, #30D5C8);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
 
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        }
-    </script>
-    <section id="education" class="education-section">
-        <h2><i class="fas fa-route"></i> Educational Journey</h2>
-        <p class="subtitle">
-            My academic path from Secondary Education to Engineering Graduation
-        </p>
-        <div class="container">
-            <div class="journey">
-                <!-- B.Tech -->
-                <div class="journey-item">
-                    <div class="journey-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="journey-card">
-                        <span class="year">2013-2017</span>
-                        <h3>B.Tech (Computer Science & Engineering)</h3>
-                        <div class="details">
-                            <p><strong>University:</strong> Guru Nanak Dev University Amritsar, Punjab</p>
-                            <p><strong>CGPA:</strong> 8.33 / 10</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- 12th -->
-                <div class="journey-item">
-                    <div class="journey-icon">
-                        <i class="fas fa-book-open"></i>
-                    </div>
+.project-header {
+    width: 100%;
+    padding: 22px 30px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+}
 
-                    <div class="journey-card">
-                        <span class="year">2012</span>
-                        <h3>Higher Secondary Education (12th)</h3>
+.project-header:hover {
+    background: #0066d6;
+}
 
-                        <div class="details">
-                            <p><strong>College:</strong> M.S. College East Champaran, Motihari, Bihar</p>
-                            <p><strong>Board:</strong> Bihar School Examination Board (BSEB)</p>
-                            <p><strong>Percentage:</strong> 72.40%</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- 10th -->
-                <div class="journey-item">
-                    <div class="journey-icon">
-                        <i class="fas fa-school"></i>
-                    </div>
+.project-content {
+    display: none;
+    padding: 20px;
+}
 
-                    <div class="journey-card">
-                        <span class="year">2010</span>
-                        <h3>Secondary Education (10th)</h3>
-                        <div class="details">
-                            <p><strong>School:</strong> Hazarimal High School Raxaul, Bihar</p>
-                            <p><strong>Board:</strong> Bihar School Examination Board (BSEB)</p>
-                            <p><strong>Percentage:</strong> 70.00%</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="education">
-        <h2><i class="fas fa-graduation-cap"></i> Training & Certifications</h2>
-        <p>
-            <a class="contact-link" href="assets/documents/Swift6.jpg" target="_blank">
-                <span class="arrow">👉</span>iOS 18, SwiftUI 6, & Swift 6: Build iOS Apps From Scratch by Udemy
-            </a>
-        </p>
-        <p>
-            <a class="contact-link" href="assets/documents/Swift6.jpg" target="_blank">
-                <span class="arrow">👉</span>MVVM Design Pattern in iOS Using SwiftUl by Udemy
-            </a>
-        </p>
-        <p>
-            <a class="contact-link" href="assets/documents/SwiftUIAndData.jpg" target="_blank">
-                <span class="arrow">👉</span>SwiftUl + SwiftData Masterclass by Udemy
-            </a>
-        </p>
-        <p>
-            <a class="contact-link" href="assets/documents/DataEntry_Certificate.pdf" target="_blank">
-                <span class="arrow">👉</span>Domestic Data Entry Operator by Skill India
-            </a>
-        </p>
-        <p>
-            <a class="contact-link" href="assets/documents/AI_Cerificate.pdf" target="_blank">
-                <span class="arrow">👉</span>AI For All by Skill India
-            </a>
-        </p>
-        <p>
-            <a class="contact-link" href="assets/documents/Vibe Coding for iOS.pdf" target="_blank">
-                <span class="arrow">👉</span>Vibe Coding for iOS Developer by Udemy
-            </a>
-        </p>
-        <p>
-            <a class="contact-link" href="assets/documents/Prompt Engineering ChatGpt.pdf" target="_blank">
-                <span class="arrow">👉</span>Prompt Engineering with Chat GPT Master Class by Udemy
-            </a>
-        </p>
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
-    </section>
-    <section id="contact">
-        <h2><i class="fas fa-address-card"></i> Contact</h2>
-        <p>
-            <a class="contact-link" href="mailto:kumaramarendra555@gmail.com">
-                <i class="fas fa-envelope"></i> kumaramarendra555@gmail.com
-            </a>
-        </p>
+table th {
+    width: 220px;
+    background: linear-gradient(135deg, #0A84FF, #30D5C8);
+    color: white;
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
 
-        <p>
-            <a class="contact-link" href="tel:+918699047413">
-                <i class="fas fa-phone"></i> +91-8699047413
-            </a>
-        </p>
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    line-height: 1.8;
+}
 
-        <p>
-            <a class="contact-link" href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-        </p>
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-        <p>
-            <a class="contact-link" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-        </p>
+a:hover {
+    text-decoration: underline;
+}
 
-        <p>
-            <a class="contact-link" href="https://www.hackerrank.com/YOUR_HACKERRANK_USERNAME" target="_blank">
-                <i class="fab fa-hackerrank"></i> HackerRank
-            </a>
-        </p>
-    </section>
+.about-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 35px;
+    margin-bottom: 40px;
+}
 
-</body>
+.about-highlight {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
 
-</html>
+.badge {
+    background: #0A84FF;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.about-card h3 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.about-intro {
+    line-height: 1.9;
+    font-size: 1.05rem;
+    color: #d0d0d0;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.tech-stack span {
+    padding: 10px 18px;
+    border-radius: 30px;
+    background: rgba(10, 132, 255, .12);
+    border: 1px solid rgba(10, 132, 255, .25);
+    color: #0A84FF;
+    font-weight: 600;
+}
+
+.read-more-btn {
+    background: #0A84FF;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.about-more {
+    display: none;
+    margin-top: 20px;
+}
+
+.about-more.show {
+    display: block;
+}
+
+.timeline-card {
+    background: rgba(255, 255, 255, .03);
+    padding: 25px;
+    border-radius: 18px;
+    border-left: 4px solid #0A84FF;
+}
+
+.timeline-card h4 {
+    margin-bottom: 15px;
+}
+
+.timeline-card p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(12px);
+    transition: .3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: #0A84FF;
+    margin-bottom: 10px;
+}
+
+.stat-card h3 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+@media(max-width:768px) {
+
+    table,
+    tbody,
+    tr,
+    td,
+    th {
+        display: block;
+        width: 100%;
+    }
+
+    table th {
+        border-bottom: none;
+    }
+
+    table td {
+        border-top: none;
+        margin-bottom: 10px;
+    }
+}
+
+/* Work Experience Section */
+
+.experience-section {
+    margin-top: 8px;
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.experience-card {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(135deg,
+            #0A84FF,
+            #2BB9E8,
+            #36D1C4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-btn {
+    width: 100%;
+    padding: 22px 30px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.experience-content {
+    display: none;
+    padding: 0 25px 25px;
+}
+
+.experience-content table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+    font-size: 18px;
+}
+
+.experience-content td {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 18px;
+}
+
+.label {
+    width: 250px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.org-link {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.org-link:hover {
+    color: #0A84FF;
+    text-decoration: underline;
+}
+
+/* Mobile */
+
+@media(max-width:768px) {
+
+    .toggle-btn {
+        font-size: 20px;
+        padding: 18px;
+    }
+
+    .experience-content table {
+        font-size: 16px;
+    }
+
+    .label {
+        width: 140px;
+    }
+}
+
+@media(max-width:768px) {
+
+    .education-section {
+        padding: 8px 8px;
+    }
+
+    .journey::before {
+        left: 30px;
+    }
+
+    .journey-icon {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        font-size: 22px;
+    }
+
+    .journey-card {
+        padding: 20px;
+    }
+}
