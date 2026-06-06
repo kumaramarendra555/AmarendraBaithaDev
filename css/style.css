@@ -35,27 +35,35 @@ nav a {
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
+    width: clamp(40px, 5vw, 60px);
+    height: clamp(40px, 5vw, 60px);
+
     border-radius: 50%;
     background: var(--gradient-primary);
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     box-shadow: 0 10px 30px rgba(10, 132, 255, 0.3);
+
     cursor: pointer;
     transition: all 0.3s ease;
+
+    flex-shrink: 0;
 }
 
 .logo span {
+    font-size: clamp(0.9rem, 1.8vw, 1.4rem);
+    font-weight: 700;
     color: #fff;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 1px;
+    line-height: 1;
+    user-select: none;
 }
 
 .logo:hover {
-    transform: scale(1.08);
+    transform: translateY(-3px) scale(1.08);
+    box-shadow: 0 15px 40px rgba(10, 132, 255, 0.4);
 }
 
 section {
@@ -570,6 +578,106 @@ a:hover {
 
 .iphone-gallery::-webkit-scrollbar-thumb {
     border-radius: 10px;
+}
+
+.hire-me-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: #0b66c2;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: system-ui, sans-serif;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+
+    /* Triggers the pulse animation continuously */
+    animation: pulse-effect 2s infinite ease-in-out;
+}
+
+/* Hover effects */
+.hire-me-btn:hover {
+    background-color: #004182;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    animation-play-state: paused;
+    /* Stops pulsing when user hovers */
+}
+
+/* Click effect */
+.hire-me-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Pulse animation logic */
+@keyframes pulse-effect {
+    0% {
+        box-shadow: 0 0 0 0 rgba(11, 102, 194, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(11, 102, 194, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(11, 102, 194, 0);
+    }
+}
+
+/* Mobile responsive settings (screens smaller than 600px) */
+@media (max-width: 600px) {
+    .hire-me-btn {
+        bottom: 16px;
+        right: 16px;
+        padding: 10px 16px;
+        /* Smaller padding */
+        font-size: 0.85rem;
+        /* Smaller font */
+    }
+}
+
+.availability-banner {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #34c759;
+    font-weight: 600;
+}
+
+.status-dot {
+    width: clamp(8px, 1vw, 12px);
+    height: clamp(8px, 1vw, 12px);
+    background: #34c759;
+    border-radius: 50%;
+    flex-shrink: 0;
+    animation: onlineStatus 2s infinite;
+}
+
+@keyframes onlineStatus {
+
+    0%,
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 0 0 rgba(52, 199, 89, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 12px rgba(52, 199, 89, 0);
+    }
 }
 
 /* RESPONSIVE IPHONE FRAME */
